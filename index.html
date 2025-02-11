@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Website</title>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky color="#95b1de"></a-sky>
+      <a-dodecahedron
+        position="2.5 1.5 -4"
+        color="lime"
+        animation="property:position;to: 2.5 1.5 -3;dir:alternate;dur:2000;loop:true"
+      ></a-dodecahedron>
+      <a-torus
+        position="4 2 -1"
+        color="red"
+        animation="property:position;to: 7 2 -1;dir:alternate;dur:1000;loop:true"
+      ></a-torus>
+      <a-icosahedron
+        position="-2 1 -2.5"
+        color="purple"
+        animation="property:position;to: -2 3 -3.5;dir:alternate;dur:1500;loop:true"
+      ></a-icosahedron>
+      <a-torus-knot
+        position="-5 2.5 0"
+        color="blue"
+        animation="property:position;to: -6 4.5 0;dir:alternate;dur:3000;loop:true"
+      ></a-torus-knot>
+      <a-box
+        position="0.5 1 -0.5"
+        color="blue"
+        animation="property:position;to: 0.5 1 -1.5;dir:alternate;dur:2500;loop:true"
+      ></a-box>
+      <a-plane
+        position="0 0 0"
+        width="20"
+        height="20"
+        rotation="-90 0"
+        color="green"
+      ></a-plane>
+    </a-scene>
+  </body>
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</html>
